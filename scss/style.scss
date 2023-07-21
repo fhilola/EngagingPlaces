@@ -1,0 +1,40 @@
+@import "reset";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin big-fonts{
+    color: #161414;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+@mixin main-fonts{
+    color: #161414;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 24px; 
+}
+@mixin secondary-fonts{
+    color: #979797;
+font-family: 'Poppins';
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+}
+@mixin link{
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #F6F4FF;
+    text-decoration: none;
+    cursor: pointer;
+}
+@import "container";
+@import "fonts";
+@import "./blocks/blocks"

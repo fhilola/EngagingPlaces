@@ -1,0 +1,140 @@
+section{
+    .hotel-restaurant{
+        display: grid;
+        grid-template-columns: repeat(4, 316px);
+        grid-template-rows: 446px;
+        gap: 0 32px;
+        .box{
+            h3{
+                @include main-fonts;
+                margin-top: 10px;
+                margin-bottom: 12px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                strong{
+                    @include secondary-fonts;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 4px;
+                }
+                .stars{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 2px;
+                }
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 120px;
+        padding-bottom: 64px;
+        h2{
+            @include big-fonts;
+        }
+        a{
+            @include link;
+        }
+    }
+}
+section{
+    .travel-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 380px;
+        gap: 0 32px;
+    }
+    .travel{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 380px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h4{
+                color:#161414;
+                font-family: 'Poppins';
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+                width: 316px;
+                padding-left: 32px;
+                padding-bottom: 35px;
+            }
+            p{
+                @include secondary-fonts;
+                width: 250px;
+                margin-top: 16px;
+                margin-bottom: 80px;
+            }
+            .icons{
+                display: flex;
+                gap: 0 24px;
+                align-items: center;
+                strong{
+                    @include secondary-fonts;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 4px;
+                }
+            }
+        }
+        .image{
+            width: 100%;
+        }
+    }
+}
+section{
+    .activities-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 316px);
+        grid-template-rows: 380px;
+        gap: 0 32px;
+        .activities{
+            h3{
+                @include main-fonts;
+                padding-top: 16px;
+            }
+        }
+    }
+}
+section{
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 488px;
+        gap: 0 32px;
+        margin-top: 120px;
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            h2{
+                @include big-fonts;
+            }
+            p{
+                @include secondary-fonts;
+                margin: 32px 0;
+                width: 480px;
+            }
+            .link{
+                display: flex;
+                align-items: center;
+                a{
+                    @include link;
+                }
+            }
+        }
+        .image > img{
+            border-radius: 50px;
+        }
+    }
+}
